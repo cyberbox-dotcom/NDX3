@@ -7,7 +7,7 @@ import pyttsx3  # Text-to-speech
 
 # Initialize MediaPipe's Hands model
 mp_hands = mp.solutions.hands
-hands = mp_hands.Hands(static_image_mode=False, max_num_hands=1, min_detection_confidence=0.5)
+hands = mp_hands.Hands(static_image_mode=False, max_num_hands=1, min_detection_confidence=0.15)
 
 # Initialize Pygame and set full-screen mode
 pygame.init()
@@ -34,7 +34,7 @@ def speak(text):
     engine.runAndWait()
 
 # Paddle setup
-paddle_width = 300
+paddle_width = 100
 paddle_height = 20
 paddle_x = game_area_width // 2 - paddle_width // 2
 paddle_y = game_area_height - paddle_height - 30
