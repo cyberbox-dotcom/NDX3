@@ -8,8 +8,7 @@
 
 ## Bước 2:
 
-- Sau khi vào vscode, chạy từng file .py để xem thử có bị thiếu/mất thư viện nào không (chạy bằng cách "python3 [tenfile].py")
-- Nếu thiếu -> Có thể copy lỗi vào chatGPT để xem cách sửa lỗi (thông thường fix bằng cách "pip install [Package thiếu]"
+- Sau khi vào vscode, chạy lệnh "pip install -r requirements.txt"
 
 # Đối với Subway Sufer
 
